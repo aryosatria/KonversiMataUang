@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#2B47A8"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="152dp"
+        android:layout_height="166dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bank" />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uang_input"
+            android:textSize="20sp"
+            android:hint="0 Rupiah" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hasil_konversi"
+            android:textColor="#ffff"
+            android:text="Hasil Konversi"
+            android:background="#2B47A8"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Rp > USD"
+        android:textSize="20sp"
+        android:textColor="#FFFF"
+        android:background="#030303"
+        android:onClick="toUSD"
+        android:id="@+id/rpusd"/>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Rp > YEN"
+        android:textSize="20sp"
+        android:textColor="#FFFF"
+        android:background="#070707"
+        android:onClick="toYEN"
+        android:id="@+id/rpyen"/>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Rp > Euro"
+        android:textSize="20sp"
+        android:textColor="#FFFF"
+        android:background="#050505"
+        android:onClick="toEuro"
+        android:id="@+id/rpeuro"/>
+</LinearLayout>
